@@ -10,7 +10,7 @@ public class HashsetTest {
         set.add("김유신");
         set.add("강감찬");
         set.add("이순신");
-        System.out.println(set); //중복 제거 + 자동 중복 삭제
+        System.out.println(set); //중복 제거 + 자동 정렬
         Iterator<String> ir=set.iterator();
         while(ir.hasNext()){
             System.out.println(ir.next());
