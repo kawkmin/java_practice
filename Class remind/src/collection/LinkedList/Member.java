@@ -1,4 +1,4 @@
-package collection;
+package collection.LinkedList;
 
 public class Member {
     private int memberId;
