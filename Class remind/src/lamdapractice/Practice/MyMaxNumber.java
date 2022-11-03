@@ -1,4 +1,4 @@
-package lamdapractice;
+package lamdapractice.Practice;
 
 @FunctionalInterface//메서드 하나만 처리
 public interface MyMaxNumber {

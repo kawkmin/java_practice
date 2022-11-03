@@ -1,4 +1,4 @@
-package lamdapractice;
+package lamdapractice.Practice;
 
 @FunctionalInterface
 public interface StringConcat {

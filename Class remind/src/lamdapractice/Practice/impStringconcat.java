@@ -1,4 +1,4 @@
-package lamdapractice;
+package lamdapractice.Practice;
 
 public class impStringconcat implements StringConcat{
 

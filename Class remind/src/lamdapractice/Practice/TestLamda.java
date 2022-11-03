@@ -1,4 +1,4 @@
-package lamdapractice;
+package lamdapractice.Practice;
 
 interface PrintString{
     void showString(String str);
