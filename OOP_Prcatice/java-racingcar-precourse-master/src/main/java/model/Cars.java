@@ -11,4 +11,8 @@ public class Cars {
         Arrays.asList(carName.split(",")).stream()
                 .forEach(name->carList.add(new Car(name)));
     }
+
+    public List<Car> getCarList() {
+        return carList;
+    }
 }
