@@ -8,6 +8,12 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserNumsValidateTest {
+    @DisplayName("유저 숫자가 정상적으로 입력했을 때, 예외 처리가 안되는지 확인")
+    @Test
+    void checkUserNums(){
+        assertThat(UserNumsValidate.checkUserNums("123"));
+    }
+
     @DisplayName("유저 숫자가 3개 이상일 때 예외 처리 되는지 확인")
     @Test
     void checkUserNumsSize(){
