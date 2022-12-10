@@ -21,4 +21,11 @@ class UserNumsValidateTest {
         assertThatThrownBy(()->UserNumsValidate.checkUserNums("112"))
                 .isInstanceOf(IllegalArgumentException.class);
     }
+
+    @DisplayName("유저 숫자가 아닐 때, 예외 처리 되는지 확인")
+    @Test
+    void checkUserNumsRight(){
+        assertThatThrownBy(()->UserNumsValidate.checkUserNums("12a"))
+                .isInstanceOf(IllegalArgumentException.class);
+    }
 }
