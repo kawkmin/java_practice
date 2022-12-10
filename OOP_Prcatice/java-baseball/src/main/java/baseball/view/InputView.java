@@ -1,5 +1,6 @@
 package baseball.view;
 
+import baseball.util.UserNumsValidate;
 import camp.nextstep.edu.missionutils.Console;
 
 import static baseball.view.ViewEnum.INPUT_USER_NUMBERS_MESSAGE;
@@ -9,6 +10,6 @@ public class InputView {
 
     public String readUserNumber(){
         INPUT_USER_NUMBERS_MESSAGE.getMessage();
-        return Console.readLine();
+        return UserNumsValidate.checkUserNums(Console.readLine());
     }
 }
