@@ -26,4 +26,16 @@ class CreateRandomNumTest {
             assertThat(computerNums.size()).isEqualTo(3);
         }
     }
+
+    @DisplayName("컴퓨터가 1~9사이의 수로만 되어있는지 확인")
+    @Test
+    void computerNumsRight(){
+        for(int i=0;i<100;i++) {
+            List<Integer> computerNums = CreateRandomNum.createComputerNums();
+            computerNums = computerNums.stream()
+                    .filter(num->num>=1&&num<=9)
+                    .collect(Collectors.toList());
+            assertThat(computerNums.size()).isEqualTo(3);
+        }
+    }
 }
