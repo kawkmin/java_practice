@@ -6,13 +6,15 @@ import java.util.List;
 public class User {
     private List<Integer> userNums;
 
-    public User() {
-        userNums=new ArrayList<>();
+    public User(String userNums) {
+        this.userNums=setUserNumsToList(userNums);
     }
 
-    public void setUserNumsToList(String userNums){
+    private List<Integer> setUserNumsToList(String userNums){
+        List<Integer> tempList=new ArrayList<>();
         for(int i=0;i<userNums.length();i++){
-            this.userNums.add(userNums.charAt(i)-'0');
+            tempList.add(userNums.charAt(i)-'0');
         }
+        return tempList;
     }
 }
