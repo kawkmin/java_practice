@@ -14,24 +14,29 @@ public class GameController {
     private boolean gameContinue;
 
     public GameController() {
-        inputView=new InputView();
-        outputView=new OutputView();
-        gameContinue=true;
+        inputView = new InputView();
+        outputView = new OutputView();
+        init();
     }
 
-    public void Start(){
-        try{
-            outputView.printGameStartMessage();
-            Computer computer=new Computer(CreateRandomNum.createComputerNums());
-            do {
-                User user = new User(inputView.readUserNumber());
-                Judgement judgement = new Judgement(user,computer);
-                judgement.calculator();
-                outputView.printResultCountMessage(judgement.getStrikeCount(), judgement.getBallCount());
-                gameContinue=judgement.continueGame();
-            }while(gameContinue);
-        }catch (IllegalArgumentException exception){
-            System.out.println(exception.getMessage());
+    public void Start() {
+        init();
+        outputView.printGameStartMessage();
+        Computer computer = new Computer(CreateRandomNum.createComputerNums());
+        do {
+            User user = new User(inputView.readUserNumber());
+            Judgement judgement = new Judgement(user, computer);
+            judgement.calculator();
+            outputView.printResultCountMessage(judgement.getStrikeCount(), judgement.getBallCount());
+            gameContinue = judgement.continueGame();
+        } while (gameContinue);
+        if (inputView.readRestartNumber().equals("1")) {
+            Start();
         }
+
+    }
+
+    private void init() {
+        gameContinue = true;
     }
 }
