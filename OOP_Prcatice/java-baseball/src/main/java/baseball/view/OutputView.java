@@ -7,6 +7,6 @@ public class OutputView {
     }
 
     public void printGameStartMessage(){
-        OUTPUT_GAME_START_MESSAGE.getMessage();
+        System.out.println(OUTPUT_GAME_START_MESSAGE.getMessage());
     }
 }
