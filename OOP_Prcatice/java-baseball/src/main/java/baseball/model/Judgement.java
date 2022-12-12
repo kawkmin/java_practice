@@ -40,7 +40,7 @@ public class Judgement {
     }
 
     public boolean continueGame(){
-        if(strikeCount==END_NEED_STRIKE_COUNT){
+        if(strikeCount!=END_NEED_STRIKE_COUNT){
             return true;
         }
         return false;
