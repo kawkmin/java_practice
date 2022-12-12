@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CreateRandomNum {
-    private final static int NUM_MAX_SIZE=3;
-    private final static int MAX_NUM=9;
-    private final static int NIM_NUM=1;
+    private static final int NUM_MAX_SIZE=3;
+    private static final int MAX_NUM=9;
+    private static final int NIM_NUM=1;
 
     public static List<Integer> createComputerNums(){
         List<Integer> computerNums = new ArrayList<>();

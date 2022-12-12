@@ -1,11 +1,15 @@
 package baseball.util;
 
+import baseball.view.ViewEnum;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class UserNumsValidate {
     private static final int USER_NUMS_SIZE=3;
+    private static final int MAX_NUM=9;
+    private static final int NIM_NUM=1;
 
     public static String checkUserNums(String userNums){
         checkDistinct(userNums);
@@ -22,7 +26,7 @@ public class UserNumsValidate {
 
     private static void checkRight(String userNums){
         for(int i=0;i<userNums.length();i++){
-            if(userNums.charAt(i)>'9'||userNums.charAt(i)<'1'){
+            if(userNums.charAt(i)>MAX_NUM||userNums.charAt(i)<NIM_NUM){
                 throw new IllegalArgumentException();
             }
         }
