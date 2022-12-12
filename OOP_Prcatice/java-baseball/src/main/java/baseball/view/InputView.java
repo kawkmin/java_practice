@@ -9,7 +9,7 @@ public class InputView {
     public InputView() {}
 
     public String readUserNumber(){
-        System.out.println(INPUT_USER_NUMBERS_MESSAGE.getMessage());
+        System.out.print(INPUT_USER_NUMBERS_MESSAGE.getMessage());
         return UserNumsValidate.checkUserNums(Console.readLine());
     }
 }
