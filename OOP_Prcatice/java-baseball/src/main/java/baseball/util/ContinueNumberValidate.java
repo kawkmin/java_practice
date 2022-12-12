@@ -7,7 +7,7 @@ public class ContinueNumberValidate {
     private static String END_NUMBER="2";
 
     public static String checkContinueNumber(String continueNumber){
-        if(continueNumber!=RESTART_NUMBER && continueNumber!=END_NUMBER){
+        if(!continueNumber.equals(RESTART_NUMBER) && !continueNumber.equals(END_NUMBER)){
             throw new IllegalArgumentException(CONTINUE_NUMBER_ERROR.getMessage());
         }
         return continueNumber;
