@@ -1,5 +1,6 @@
 package baseball.view;
 
+import baseball.util.ContinueNumberValidate;
 import baseball.util.UserNumsValidate;
 import camp.nextstep.edu.missionutils.Console;
 
@@ -16,6 +17,6 @@ public class InputView {
 
     public String readRestartNumber(){
         System.out.println(INPUT_RESTART_MESSAGE.getMessage());
-        return Console.readLine();
+        return ContinueNumberValidate.checkContinueNumber(Console.readLine());
     }
 }
