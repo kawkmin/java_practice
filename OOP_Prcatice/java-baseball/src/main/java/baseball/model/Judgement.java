@@ -3,6 +3,7 @@ package baseball.model;
 import java.util.List;
 
 public class Judgement {
+    private static final int END_NEED_STRIKE_COUNT=3;
     private final User user;
     private final Computer computer;
     private int strikeCount;
@@ -36,6 +37,13 @@ public class Judgement {
                 this.ballCount++;
             }
         }
+    }
+
+    public boolean continueGame(){
+        if(strikeCount==END_NEED_STRIKE_COUNT){
+            return true;
+        }
+        return false;
     }
 
     public int getStrikeCount() {
