@@ -12,4 +12,7 @@ public class Computer {
         this.computerNums = computerNums;
     }
 
+    public List<Integer> getComputerNums() {
+        return computerNums;
+    }
 }

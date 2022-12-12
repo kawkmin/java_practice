@@ -17,4 +17,8 @@ public class User {
         }
         return tempList;
     }
+
+    public List<Integer> getUserNums() {
+        return userNums;
+    }
 }
