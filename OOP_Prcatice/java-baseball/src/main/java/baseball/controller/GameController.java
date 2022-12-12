@@ -15,6 +15,7 @@ public class GameController {
 
     public void Start(){
         try{
+            outputView.printGameStartMessage();
         }catch (IllegalArgumentException exception){
             System.out.println(exception.getMessage());
         }
