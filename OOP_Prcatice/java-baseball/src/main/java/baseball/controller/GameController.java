@@ -8,6 +8,7 @@ import baseball.view.InputView;
 import baseball.view.OutputView;
 
 public class GameController {
+    private static final String RESTART_NUMBER="1";
     private final InputView inputView;
     private final OutputView outputView;
 
@@ -30,7 +31,7 @@ public class GameController {
             outputView.printResultCountMessage(judgement.getStrikeCount(), judgement.getBallCount());
             gameContinue = judgement.continueGame();
         } while (gameContinue);
-        if (inputView.readRestartNumber().equals("1")) {
+        if (inputView.readRestartNumber().equals(RESTART_NUMBER)) {
             Start();
         }
 
