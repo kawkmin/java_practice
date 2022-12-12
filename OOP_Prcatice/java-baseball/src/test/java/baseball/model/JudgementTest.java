@@ -40,4 +40,24 @@ class JudgementTest {
         assertThat(judgement.getStrikeCount()).isEqualTo(0);
         assertThat(judgement.getBallCount()).isEqualTo(0);
     }
+
+    @DisplayName("스트라이크가 3개가 되면 false를 리턴하는지 확인")
+    @Test
+    void checkContinueGame1(){
+        User user=new User("123");
+        Computer computer=new Computer(List.of(1,2,3));
+        Judgement judgement=new Judgement(user,computer);
+        judgement.calculator();
+        assertThat(judgement.continueGame()).isEqualTo(false);
+    }
+
+    @DisplayName("스트라이크가 3개가 아니면 true를 리턴하는지 확인")
+    @Test
+    void checkContinueGame2(){
+        User user=new User("523");
+        Computer computer=new Computer(List.of(1,2,3));
+        Judgement judgement=new Judgement(user,computer);
+        judgement.calculator();
+        assertThat(judgement.continueGame()).isEqualTo(true);
+    }
 }
