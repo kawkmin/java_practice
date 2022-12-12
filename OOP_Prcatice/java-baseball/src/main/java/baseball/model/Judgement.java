@@ -37,4 +37,12 @@ public class Judgement {
             }
         }
     }
+
+    public int getStrikeCount() {
+        return strikeCount;
+    }
+
+    public int getBallCount() {
+        return ballCount;
+    }
 }
