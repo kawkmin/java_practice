@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class User {
-    private List<Integer> userNums;
+    private final List<Integer> userNums;
 
     public User(String userNums) {
         this.userNums=setUserNumsToList(userNums);

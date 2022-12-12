@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Computer {
-    private List<Integer> computerNums = new ArrayList<>();
+    private final List<Integer> computerNums;
 
     public Computer(List<Integer> computerNums) {
         this.computerNums = computerNums;
