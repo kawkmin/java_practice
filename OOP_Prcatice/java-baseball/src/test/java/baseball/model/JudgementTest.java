@@ -29,4 +29,15 @@ class JudgementTest {
         judgement.calculator();
         assertThat(judgement.getStrikeCount()).isEqualTo(1);
     }
+
+    @DisplayName("일치하는 것이 없을 때, 낫싱인지 확인")
+    @Test
+    void checkNothing(){
+        User user=new User("123");
+        Computer computer=new Computer(List.of(4,5,6));
+        Judgement judgement=new Judgement(user,computer);
+        judgement.calculator();
+        assertThat(judgement.getStrikeCount()).isEqualTo(0);
+        assertThat(judgement.getBallCount()).isEqualTo(0);
+    }
 }
