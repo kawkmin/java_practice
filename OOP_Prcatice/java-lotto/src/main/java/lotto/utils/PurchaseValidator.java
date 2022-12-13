@@ -1,8 +1,10 @@
 package lotto.utils;
 
 import static lotto.utils.ErrorEnum.MONEY_NUMBER_ERROR;
+import static lotto.utils.ErrorEnum.MONEY_UNIT_ERROR;
 
 public class PurchaseValidator {
+    private static final int MONEY_UNIT=1000;
     private int money;
 
     public String checkPurchase(String purchaseMoney){
@@ -17,5 +19,10 @@ public class PurchaseValidator {
         }catch (Exception exception){
             throw new IllegalArgumentException(MONEY_NUMBER_ERROR.getMessage());
         }
+    }
+
+    private void checkUnit(){
+        if(money%MONEY_UNIT!=0)
+            throw new IllegalArgumentException(MONEY_UNIT_ERROR.getMessage());
     }
 }
