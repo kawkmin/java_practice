@@ -2,6 +2,7 @@ package lotto.utils;
 
 import lotto.model.Lotto;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -16,9 +17,21 @@ public class WinLottoValidator {
     }
 
     public String checkWinLotto(String winLotto){
+        checkNumber(winLotto);
         checkSize(winLotto);
         checkDistinct(winLotto);
         return winLotto;
+    }
+
+    private void checkNumber(String winLotto){
+        try{
+            List<Integer> lotto=new ArrayList<>();
+            for(String number: winLotto.split(",")){
+                lotto.add(Integer.parseInt(number));
+            }
+        }catch (Exception e){
+            throw new IllegalArgumentException();
+        }
     }
 
     private void checkSize(String winLotto){
