@@ -12,7 +12,7 @@ public class PurchaseValidator {
 
     public String checkPurchase(String purchaseMoney){
         checkNumber(purchaseMoney);
-        checkUnit();
+        checkUnit(money);
         return purchaseMoney;
     }
 
@@ -24,7 +24,7 @@ public class PurchaseValidator {
         }
     }
 
-    private void checkUnit(){
+    private void checkUnit(int money){
         if(money%MONEY_UNIT!=0)
             throw new IllegalArgumentException(MONEY_UNIT_ERROR.getMessage());
     }
