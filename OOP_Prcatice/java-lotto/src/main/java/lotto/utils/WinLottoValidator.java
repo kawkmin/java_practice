@@ -54,7 +54,7 @@ public class WinLottoValidator {
     private void checkMinMax(String winLotto) {
         List<String> lotto = Arrays.asList(winLotto.split(","));
         if (lotto.stream().mapToInt(Integer::parseInt)
-                .filter(number -> number > MIN_NUMBER && number <= MAX_NUMBER)
+                .filter(number -> number >= MIN_NUMBER && number <= MAX_NUMBER)
                 .count() != LOTTO_SIZE) {
             throw new IllegalArgumentException(WIN_LOTTO_MIN_MAX_ERROR.getMessage());
         }
