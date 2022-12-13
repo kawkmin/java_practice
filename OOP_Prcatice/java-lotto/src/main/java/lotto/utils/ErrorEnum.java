@@ -1,7 +1,10 @@
 package lotto.utils;
 
 public enum ErrorEnum {
+    MONEY_NUMBER_ERROR("숫자만 입력해 주세요."),
     ;
+
+    private static final String ERROR="[ERROR] ";
     private String message;
 
     ErrorEnum(String message) {
@@ -9,6 +12,6 @@ public enum ErrorEnum {
     }
 
     public String getMessage() {
-        return message;
+        return ERROR+message;
     }
 }
