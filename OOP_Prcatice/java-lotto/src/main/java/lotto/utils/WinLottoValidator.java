@@ -7,8 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static lotto.utils.ErrorEnum.WIN_LOTTO_DISTINCT_ERROR;
-import static lotto.utils.ErrorEnum.WIN_LOTTO_SIZE_ERROR;
+import static lotto.utils.ErrorEnum.*;
 
 public class WinLottoValidator {
     private static final int LOTTO_SIZE=6;
@@ -30,7 +29,7 @@ public class WinLottoValidator {
                 lotto.add(Integer.parseInt(number));
             }
         }catch (Exception e){
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException(WIN_LOTTO_NUMBER_ERROR.getMessage());
         }
     }
 
