@@ -7,6 +7,7 @@ public enum ErrorEnum {
     WIN_LOTTO_SIZE_ERROR("6개를 입력해 주세요"),
     WIN_LOTTO_DISTINCT_ERROR("중복된 숫자는 입력할 수 없습니다"),
     WIN_LOTTO_NUMBER_ERROR("숫자를 입력해 주세요"),
+    WIN_LOTTO_MIN_MAX_ERROR("1과 45사이의 수만 입력해야합니다"),
     ;
 
     private static final String ERROR="[ERROR] ";
