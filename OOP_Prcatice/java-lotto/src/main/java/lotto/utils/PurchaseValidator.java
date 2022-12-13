@@ -7,9 +7,12 @@ public class PurchaseValidator {
     private static final int MONEY_UNIT=1000;
     private int money;
 
+    public PurchaseValidator() {
+    }
+
     public String checkPurchase(String purchaseMoney){
         checkNumber(purchaseMoney);
-
+        checkUnit();
         return purchaseMoney;
     }
 
