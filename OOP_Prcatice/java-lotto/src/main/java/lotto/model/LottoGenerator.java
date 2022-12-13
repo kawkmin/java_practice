@@ -37,4 +37,8 @@ public class LottoGenerator {
     public List<Lotto> getPurchaseLottos() {
         return purchaseLottos;
     }
+
+    public int getCnt() {
+        return cnt;
+    }
 }
