@@ -5,14 +5,13 @@ import static lotto.utils.ErrorEnum.MONEY_UNIT_ERROR;
 
 public class PurchaseValidator {
     private static final int MONEY_UNIT=1000;
-    private int money;
 
     public PurchaseValidator() {
     }
 
     public String checkPurchase(String purchaseMoney){
         checkNumber(purchaseMoney);
-        checkUnit(money);
+        checkUnit(Integer.parseInt(purchaseMoney));
         return purchaseMoney;
     }
 
