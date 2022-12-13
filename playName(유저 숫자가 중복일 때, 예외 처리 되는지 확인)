@@ -1,0 +1,305 @@
+[33mcommit 03fbcbc9bde29d4dedb242b689e2ce23417fb3ff[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 19:03:14 2022 +0900
+
+    test: 사용자의 숫자가 3개 이상일 때 예외처리 되는지 테스트
+
+[33mcommit 5b05413a5a625b380dd61f89567743e03ddd8441[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 18:02:33 2022 +0900
+
+    feat: 사용자의 숫자 입력의 예외 처리
+
+[33mcommit 7b802350214f1eeb0965ce444e0d00407b9ac617[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 17:45:28 2022 +0900
+
+    feat: 사용자의 숫자 입력 받기 구현
+
+[33mcommit 464adc0204bef6100f2d27f312106065d23776f9[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 17:39:17 2022 +0900
+
+    feat: Enum을 통해서 View 메시지 상수 관리
+
+[33mcommit 49dd5c34793c3e8c0893acd9e299fce7e26d750d[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 17:28:47 2022 +0900
+
+    test: 컴퓨터의 숫자가 1~9사이의 수가 맞는지 테스트
+
+[33mcommit 06b97f88c5efeceb8335bb6ebdf683fec2a100fa[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 17:25:08 2022 +0900
+
+    test: 컴퓨터의 숫자 중복포함 여부 테스트
+
+[33mcommit 52fd8d6b80631786a2fcf5eaa6de8c02d1ba879d[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 17:21:29 2022 +0900
+
+    test: 컴퓨터의 숫자의 자릿수 테스트
+
+[33mcommit bce936043041b96499670688a3a3b52aa784b415[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 17:13:48 2022 +0900
+
+    refactor: 메소드 나누기
+
+[33mcommit eae2b41d09a15b7be2456f7d017b0cd531c34b5e[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 16:57:31 2022 +0900
+
+    feat: 서로 다른 1~9 사이의 숫자 3개를 랜덤으로 반환하는 함수 구현
+
+[33mcommit 3d63b764bf8649a53ca5f90f79431f7aa4e6125b[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 16:56:47 2022 +0900
+
+    feat: 컴퓨터의 숫자를 가진 컴퓨터 객체 생성
+
+[33mcommit 2a4585d15a790102b288e3c99529fa25f0505cff[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 16:15:30 2022 +0900
+
+    docs: 요구사항 정리
+
+[33mcommit fd8a20e6ec32481ed4366334a3040eb9aca9ad97[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 15:23:25 2022 +0900
+
+    creat: 야구 게임
+
+[33mcommit 42624fce5ebd27397123d8b42fab97e46c0610bb[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sat Dec 10 15:21:47 2022 +0900
+
+    create
+
+[33mcommit 7bd70ecda9b5f0351da072aa02701a1fcbccc269[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Dec 8 19:49:34 2022 +0900
+
+    create
+
+[33mcommit 1f31e2fd1b4baed4cc4a9079bb669d8397ab9075[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Dec 8 19:48:44 2022 +0900
+
+    create
+
+[33mcommit 4790f198f72d6cc127cc5460ba506d76610e2e55[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Nov 28 20:17:46 2022 +0900
+
+    test: CarList가 정상적으로 담아지는지 확인하는 테스트
+
+[33mcommit d7db6b76b2d3e598695efa865701069d0522ff43[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Nov 28 20:17:02 2022 +0900
+
+    style
+
+[33mcommit d54e39bb8bdc24f80e5e53bf92517ac2bfe78e9a[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Nov 28 19:51:00 2022 +0900
+
+    feat: 이름을 가진 자동차들의 객체 만들기 구현
+
+[33mcommit 292bff3249c78e7ee09a01f458c2d8fd41ab3de2[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Nov 28 19:46:53 2022 +0900
+
+    feat: 자동차 이름을 입력받는 메서드 구현
+
+[33mcommit e07ec00f7f6f37a91cb1932a30b25aeab6a3d0fa[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Nov 28 19:46:21 2022 +0900
+
+    feat: Enum을 통해서 메세지 상수화
+
+[33mcommit a1bcefba7936c08dd96dc30d8d99a3310a234361[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Nov 28 19:46:01 2022 +0900
+
+    docs: MOD
+
+[33mcommit cdb174f64f0bee1a924e193085038cb9e0078e46[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Nov 28 19:20:50 2022 +0900
+
+    style: 자동차 객체가 모인 객체
+
+[33mcommit 2ec51fdfceaa5139fed15333219952cd83742969[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Nov 28 18:03:06 2022 +0900
+
+    style: mvc패턴 적용
+
+[33mcommit 29df645ec559d0d24653ba35fc2a376932887025[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Nov 28 17:44:21 2022 +0900
+
+    docs: OOP 피드백 기반 정리
+
+[33mcommit d29e5ba108999c19f1a18e22f72794a71a821386[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Nov 28 17:17:53 2022 +0900
+
+    feat: 파일 생성
+
+[33mcommit e899a2177f5331d05199332f9d4d4fb6d040794e[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sun Nov 27 15:22:38 2022 +0900
+
+    집합(S5)
+
+[33mcommit e17d2f838a17687f533e3e51171865453b26a5a6[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sun Nov 27 14:37:03 2022 +0900
+
+    듣보잡(S4)
+
+[33mcommit 7192e765148c1156ff9ae98a5a6ad704024e9bd9[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sun Nov 27 14:36:48 2022 +0900
+
+    Class remind
+
+[33mcommit 9602b10515c882d30bc6dcf1198bd363e1cb618f[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Sun Nov 6 12:16:55 2022 +0900
+
+    [feat] 인터페이스 연습
+
+[33mcommit 459a38636bdc777ddb560e9de108667be04fff1e[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Nov 3 16:38:16 2022 +0900
+
+    [feat] Stream 연습3
+
+[33mcommit 3ce2d04c3771cab74d240fc4b28deeead229fa12[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Nov 3 16:11:30 2022 +0900
+
+    [feat] Stream 연습2
+
+[33mcommit 9deed2bb198e6bfba1a79c2eb715a782f34f7d04[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Nov 3 14:47:27 2022 +0900
+
+    [feat] Stream 연습
+
+[33mcommit ce6fd620ded46be9ab56472c13a9ba3ef303c9cc[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Nov 3 14:47:12 2022 +0900
+
+    [refactor] 상위 패키지 추가
+
+[33mcommit 3c52d443722612a51320eb06bb5844b67606c581[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Nov 3 13:59:50 2022 +0900
+
+    [refactor] 상위 패키지 추가
+
+[33mcommit e09f6ee899f7daaed09a27a012ebd81f0678a468[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Nov 3 13:42:28 2022 +0900
+
+    [refactor] 람다식 연습
+
+[33mcommit fb3183fa14a574db5891186a0eb5a7c66da65197[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Nov 3 13:41:14 2022 +0900
+
+    [feat] 람다식 연습
+
+[33mcommit c65bea12955eb6c7e5bbfff4eb28bab3b82a78fa[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Nov 3 12:20:22 2022 +0900
+
+    [feat] 해쉬맵 연습
+
+[33mcommit b4cd5471a99bc9143a475bb860bead8a875861d6[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Nov 3 11:54:16 2022 +0900
+
+    [refactor] 패키지 위치 수정
+
+[33mcommit b0c7a203bcd43c80c4fdb842e2e7e8b3cbb5138f[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Nov 3 11:53:50 2022 +0900
+
+    [feat] Hashset 연습
+
+[33mcommit b4058102b9866b57a9b4b00708417eba4cc3d0cd[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Nov 3 11:26:11 2022 +0900
+
+    [feat] LinkedList 연습
+
+[33mcommit 031726dad3c950b668e1ee41a9a84a560518ae63[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Nov 3 11:10:51 2022 +0900
+
+    [feat] 제네릭 연습
+
+[33mcommit 383c955c4e8dcd35bee5ef891fada51752bc0501[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Oct 27 15:50:54 2022 +0900
+
+    import 인텔리제이
+
+[33mcommit af6bd29c20daa9fa84de321e6461e2c8773a7b70[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Fri Aug 12 16:44:23 2022 +0900
+
+    class 연습 interface 2
+
+[33mcommit 851865ee1f0eba200ea36792d0f0a2e091404f5f[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Fri Aug 12 16:11:27 2022 +0900
+
+    class 복습 abstract
+
+[33mcommit 200654082b338d2c8dac8e29c68293c0acfd4881[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Tue Aug 9 15:59:57 2022 +0900
+
+    class 복습 다운캐스팅,instanceof
+
+[33mcommit f41740ed349336ebdf16db7a3d47a32dafe6745a[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Tue Aug 9 15:46:48 2022 +0900
+
+    class복습 오버라이딩, 가상 메소드
+
+[33mcommit a4831f0ebd978cf706bd16ad5a1cac62b1e487d5[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Aug 8 17:25:50 2022 +0900
+
+    Class 복습 ArrayList<class>
+
+[33mcommit 02d8284209f58d68cc273f64ec76077348e0bb4e[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Aug 8 17:23:22 2022 +0900
+
+    class 연습3 ArrayList(class)2
+
+[33mcommit 31c5b7e3a947e5c193e13e786cc55433b7614b4a[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Aug 8 16:59:43 2022 +0900
+
+    class복습2 ArrayList<class>
+
+[33mcommit 99b6bd7667d06c8d47eea519fc0a055dc2211164[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Mon Aug 8 15:41:05 2022 +0900
+
+    class 복습1
+
+[33mcommit d835af6ac9e972555ac6fbe6080af16b2f33ec0d[m
+Author: kawkmin <86940335+kawkmin@users.noreply.github.com>
+Date:   Thu Jul 28 16:31:02 2022 +0900
+
+    손익분기점(V2)
