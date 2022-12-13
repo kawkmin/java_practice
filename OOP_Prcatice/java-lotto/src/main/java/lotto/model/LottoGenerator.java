@@ -15,6 +15,7 @@ public class LottoGenerator {
     public LottoGenerator(String purchaseMoney) {
         this.purchaseMoney=Integer.parseInt(purchaseMoney);
         this.cnt=this.purchaseMoney/moneyUnit;
+        purchaseLotto();
     }
 
     private void purchaseLotto(){
