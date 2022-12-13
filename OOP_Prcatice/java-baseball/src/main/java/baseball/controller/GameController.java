@@ -22,8 +22,21 @@ public class GameController {
 
     public void Start() {
         init();
+
         outputView.printGameStartMessage();
         Computer computer = new Computer(CreateRandomNum.createComputerNums());
+        continueGame(computer);
+
+        if (inputView.readRestartNumber().equals(RESTART_NUMBER)) {
+            Start();
+        }
+    }
+
+    private void init() {
+        gameContinue = true;
+    }
+
+    private void continueGame(Computer computer){
         do {
             User user = new User(inputView.readUserNumber());
             Judgement judgement = new Judgement(user, computer);
@@ -31,13 +44,5 @@ public class GameController {
             outputView.printResultCountMessage(judgement.getStrikeCount(), judgement.getBallCount());
             gameContinue = judgement.continueGame();
         } while (gameContinue);
-        if (inputView.readRestartNumber().equals(RESTART_NUMBER)) {
-            Start();
-        }
-
-    }
-
-    private void init() {
-        gameContinue = true;
     }
 }
