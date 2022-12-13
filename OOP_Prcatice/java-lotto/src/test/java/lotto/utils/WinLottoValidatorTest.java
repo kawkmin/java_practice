@@ -32,4 +32,16 @@ class WinLottoValidatorTest {
                 ()-> winLottoValidator.checkWinLotto("1,2,3,b,5,a"));
         assertThat(exception.getMessage()).isEqualTo("[ERROR] 숫자를 입력해 주세요");
     }
+
+    @DisplayName("당첨 번호가 1과 45사이가 아니면 예외처리 되는지 테스트")
+    @Test
+    void testMinMax(){
+        IllegalArgumentException exception=assertThrows(IllegalArgumentException.class,
+                ()-> winLottoValidator.checkWinLotto("1,2,3,100,4,5"));
+        assertThat(exception.getMessage()).isEqualTo("[ERROR] 1과 45사이의 수만 입력해야합니다");
+
+        IllegalArgumentException exception1=assertThrows(IllegalArgumentException.class,
+                ()-> winLottoValidator.checkWinLotto("1,2,3,0,4,5"));
+        assertThat(exception1.getMessage()).isEqualTo("[ERROR] 1과 45사이의 수만 입력해야합니다");
+    }
 }
