@@ -9,6 +9,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class WinLottoValidatorTest {
     private WinLottoValidator winLottoValidator=new WinLottoValidator();
 
+    @DisplayName("당첨 번호가 정상적일 때 테스트")
+    @Test
+    void testRight(){
+        assertThat(winLottoValidator.checkWinLotto("1,23,4,6,45,7"));
+    }
+
     @DisplayName("당첨 번호가 6개가 아니면 예외처리 되는지 테스트")
     @Test
     void testSize(){
