@@ -9,6 +9,7 @@ public enum ViewEnum {
     OUTPUT_RESULT_RANKING_MESSAGE("당첨 통계\n---"),
     OUTPUT_RESULT_RANKING("%d개 일치%s (%s원) - %d개\n"),
     OUTPUT_BONUS_RESULT_RANKING(", 보너스 볼 일치"),
+    OUTPUT_ADVANCED_RATE("총 수익률은 %.1f%%입니다."),
     ;
 
     private String message;

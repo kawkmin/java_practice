@@ -26,6 +26,7 @@ public class OutputView {
         for (int i = 0; i < resultRank.length; i++) {
             detailResultRanking(resultRank,i);
         }
+        System.out.printf(OUTPUT_ADVANCED_RATE.getMessage(),calculatorRanking.getAdvancedRate());
     }
 
     private void detailResultRanking(int[] resultRank,int i){
@@ -40,4 +41,5 @@ public class OutputView {
         }
         System.out.printf(OUTPUT_RESULT_RANKING.getMessage(), i + INDEX_ARRAY_HELPER.getHelpNumber(), "", price[i], resultRank[i]);
     }
+
 }
