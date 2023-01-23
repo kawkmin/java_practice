@@ -4,6 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 
 class LottoGeneratorTest {
     private LottoGenerator lottoGenerator;
@@ -12,6 +13,6 @@ class LottoGeneratorTest {
     @Test
     void testRight(){
         lottoGenerator=new LottoGenerator("2000");
-        assertThat(lottoGenerator.getPurchaseLotto().size()).isEqualTo(2);
+        assertThat(lottoGenerator.getPurchaseLottos().size()).isEqualTo(2);
     }
 }
