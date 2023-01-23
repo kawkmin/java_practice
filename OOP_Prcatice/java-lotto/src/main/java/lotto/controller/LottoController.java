@@ -1,5 +1,6 @@
 package lotto.controller;
 
+import lotto.model.CalculatorRanking;
 import lotto.model.LottoGenerator;
 import lotto.model.WinLotto;
 import lotto.view.InputView;
@@ -11,6 +12,7 @@ public class LottoController {
 
     private LottoGenerator lottoGenerator;
     private WinLotto winLotto;
+    private CalculatorRanking calculatorRanking;
 
     public LottoController() {
         this.inputView = new InputView();
@@ -21,6 +23,7 @@ public class LottoController {
         try {
             buyLotto();
             makeWinLotto();
+            calculateResult();
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
@@ -35,5 +38,10 @@ public class LottoController {
         String winLottoNumbers=inputView.readWinLotto();
         String winLottoBonusNumber=inputView.readWinLottoOfBonusNumber();
         winLotto=new WinLotto(winLottoNumbers,winLottoBonusNumber);
+    }
+
+    private void calculateResult(){
+        calculatorRanking=new CalculatorRanking(this.lottoGenerator,this.winLotto);
+        outputView.printResultRanking(calculatorRanking);
     }
 }
