@@ -10,12 +10,12 @@ public class LottoGenerator {
     private final int purchaseMoney;
     private final int cnt;
 
-    private List<Lotto> purchaseLotto;
+    private final List<Lotto> lottos;
 
     public LottoGenerator(String purchaseMoney) {
         this.purchaseMoney=Integer.parseInt(purchaseMoney);
         this.cnt=this.purchaseMoney/moneyUnit;
-        purchaseLotto =new ArrayList<>();
+        lottos =new ArrayList<>();
         purchaseLotto();
     }
 
@@ -30,11 +30,11 @@ public class LottoGenerator {
 
     private void addLotto(List<Integer> lottoNumbers){
         Lotto lotto=new Lotto(lottoNumbers);
-        this.purchaseLotto.add(lotto);
+        this.lottos.add(lotto);
     }
 
-    public List<Lotto> getPurchaseLotto() {
-        return purchaseLotto;
+    public List<Lotto> getLottos() {
+        return lottos;
     }
 
     public int getCnt() {

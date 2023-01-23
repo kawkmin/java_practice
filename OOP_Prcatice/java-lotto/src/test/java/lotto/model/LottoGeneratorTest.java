@@ -12,6 +12,6 @@ class LottoGeneratorTest {
     @Test
     void testRight(){
         lottoGenerator=new LottoGenerator("2000");
-        assertThat(lottoGenerator.getPurchaseLotto().size()).isEqualTo(2);
+        assertThat(lottoGenerator.getLottos().size()).isEqualTo(2);
     }
 }

@@ -1,12 +1,5 @@
 package lotto.model;
 
-import lotto.model.LottoGenerator;
-import lotto.model.WinLotto;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 enum calculatorHelper {
     INDEX_ARRAY_HELPER(3),
     INDEX_SIZE(5),
@@ -46,7 +39,7 @@ public class CalculatorRanking {
     }
 
     private void calculateRanking() {
-        for (Lotto lotto : lottoGenerator.getPurchaseLotto()) {
+        for (Lotto lotto : lottoGenerator.getLottos()) {
             int index=calculateDetail(lotto);
             if(index!=calculatorHelper.NO_RANK_INDEX.getHelpNumber()) {
                 resultRank[index]++;
