@@ -21,4 +21,9 @@ public class InputView {
         System.out.println(INPUT_WIN_LOTTO.getMessage());
         return Console.readLine();
     }
+
+    public String readWinLottoOfBonusNumber(){
+        System.out.println(INPUT_BONUS_NUMBER);
+        return Console.readLine();
+    }
 }
