@@ -21,7 +21,7 @@ public class OutputView {
     }
 
     public void printResultRanking(CalculatorRanking calculatorRanking) {
-        System.out.print(OUTPUT_RESULT_RANKING_MESSAGE.getMessage());
+        System.out.println(OUTPUT_RESULT_RANKING_MESSAGE.getMessage());
         int[] resultRank = calculatorRanking.getResultRank();
         for (int i = 0; i < resultRank.length; i++) {
             detailResultRanking(resultRank,i);
