@@ -6,14 +6,17 @@ public class CalculatorRanking {
 
     private final LottoGenerator lottoGenerator;
     private final WinLotto winLotto;
+    private final int[] prices = {5_000, 50_000, 1_500_000, 30_000_000, 2_000_000_000};
 
     private int[] resultRank;
+    private double advancedRate;
 
     public CalculatorRanking(LottoGenerator lottoGenerator, WinLotto winLotto) {
         resultRank = new int[calculatorHelper.INDEX_SIZE.getHelpNumber()];
         this.lottoGenerator = lottoGenerator;
         this.winLotto = winLotto;
         calculateRanking();
+        calculateAdvancedRate();
     }
 
     private void calculateRanking() {
@@ -52,7 +55,19 @@ public class CalculatorRanking {
         }
     }
 
+    private void calculateAdvancedRate() {
+        double sum = 0;
+        for (int i = 0; i < resultRank.length; i++) {
+            sum += resultRank[i] * prices[i];
+        }
+        this.advancedRate= sum/(double)(lottoGenerator.getCnt()*1000)*100;
+    }
+
     public int[] getResultRank() {
         return resultRank;
+    }
+
+    public double getAdvancedRate() {
+        return advancedRate;
     }
 }
