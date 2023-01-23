@@ -1,4 +1,4 @@
-package lotto.utils;
+package lotto.utils.validators;
 
 import static lotto.utils.ErrorEnum.MONEY_NUMBER_ERROR;
 import static lotto.utils.ErrorEnum.MONEY_UNIT_ERROR;
