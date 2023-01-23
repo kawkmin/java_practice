@@ -16,15 +16,7 @@ public class LottoController {
     }
 
     public void start(){
-        buyLotto();
-    }
-
-    private void buyLotto(){
-        lottoGenerator=new LottoGenerator(inputView.readPurchaseMoney());
+        lottoGenerator=new LottoGenerator(inputView.purchaseMoney());
         outputView.printPurchaseLotto(lottoGenerator);
-    }
-
-    private void makeWinLotto(){
-
     }
 }
