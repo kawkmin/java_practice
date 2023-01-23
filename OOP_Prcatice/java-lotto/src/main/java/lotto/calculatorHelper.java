@@ -4,7 +4,7 @@ public enum calculatorHelper {
     INDEX_ARRAY_HELPER(3),
     INDEX_SIZE(5),
 
-    NEED_CHECK_NUMBER(5),
+    NEED_CHECK_BONUS(5),
     ALL_RIGHT(6),
     MIN_RIGHT(3),
     ALL_RIGHT_INDEX(4),

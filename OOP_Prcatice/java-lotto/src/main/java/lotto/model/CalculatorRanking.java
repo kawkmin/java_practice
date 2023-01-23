@@ -36,7 +36,7 @@ public class CalculatorRanking {
     }
 
     private int calculateIndex(int index, Lotto lotto) {
-        if (index == calculatorHelper.NEED_CHECK_NUMBER.getHelpNumber())
+        if (index == calculatorHelper.NEED_CHECK_BONUS.getHelpNumber())
             return calculateBonus(lotto);
         if (index == calculatorHelper.ALL_RIGHT.getHelpNumber())
             return calculatorHelper.ALL_RIGHT_INDEX.getHelpNumber();
