@@ -33,4 +33,12 @@ public class WinLotto {
         else
             return bonusNumber;
     }
+
+    public Lotto getWinningLotto() {
+        return winningLotto;
+    }
+
+    public int getBonusNumber() {
+        return bonusNumber;
+    }
 }
