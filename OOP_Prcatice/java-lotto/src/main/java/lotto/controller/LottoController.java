@@ -1,6 +1,7 @@
 package lotto.controller;
 
 import lotto.model.LottoGenerator;
+import lotto.model.WinLotto;
 import lotto.view.InputView;
 import lotto.view.OutputView;
 
@@ -9,6 +10,7 @@ public class LottoController {
     private final OutputView outputView;
 
     private LottoGenerator lottoGenerator;
+    private WinLotto winLotto;
 
     public LottoController() {
         this.inputView = new InputView();
@@ -16,7 +18,12 @@ public class LottoController {
     }
 
     public void start(){
-        buyLotto();
+        try {
+            buyLotto();
+            makeWinLotto();
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 
     private void buyLotto(){
@@ -25,6 +32,8 @@ public class LottoController {
     }
 
     private void makeWinLotto(){
-
+        String winLottoNumbers=inputView.readWinLotto();
+        String winLottoBonusNumber=inputView.readWinLottoOfBonusNumber();
+        winLotto=new WinLotto(winLottoNumbers,winLottoBonusNumber);
     }
 }
