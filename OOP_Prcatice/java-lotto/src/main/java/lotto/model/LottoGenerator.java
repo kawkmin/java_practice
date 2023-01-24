@@ -1,7 +1,6 @@
 package lotto.model;
 
 import lotto.utils.CreateRandomLottoNumber;
-import lotto.utils.PurchaseValidator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,12 +10,12 @@ public class LottoGenerator {
     private final int purchaseMoney;
     private final int cnt;
 
-    private List<Lotto> purchaseLottos;
+    private final List<Lotto> lottos;
 
     public LottoGenerator(String purchaseMoney) {
         this.purchaseMoney=Integer.parseInt(purchaseMoney);
         this.cnt=this.purchaseMoney/moneyUnit;
-        purchaseLottos=new ArrayList<>();
+        lottos =new ArrayList<>();
         purchaseLotto();
     }
 
@@ -31,11 +30,11 @@ public class LottoGenerator {
 
     private void addLotto(List<Integer> lottoNumbers){
         Lotto lotto=new Lotto(lottoNumbers);
-        this.purchaseLottos.add(lotto);
+        this.lottos.add(lotto);
     }
 
-    public List<Lotto> getPurchaseLottos() {
-        return purchaseLottos;
+    public List<Lotto> getLottos() {
+        return lottos;
     }
 
     public int getCnt() {
