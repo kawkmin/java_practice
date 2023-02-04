@@ -1,6 +1,7 @@
 package baseball.controller;
 
 import baseball.model.Computer;
+import baseball.model.Judgement;
 import baseball.model.User;
 import baseball.util.RandomUtil;
 import baseball.view.InputView;
@@ -12,6 +13,8 @@ public class BaseBallController {
   private final InputView inputView = new InputView();
   private final Computer computer;
 
+  private Judgement judgement;
+
   private User user;
 
   public BaseBallController() {
@@ -20,6 +23,14 @@ public class BaseBallController {
 
   public void gameStart() {
     outputView.gameStart();
-    user = new User(inputView.getUserNumber());
+    gameCalculate();
+  }
+
+  private void gameCalculate() {
+    do {
+      user = new User(inputView.getUserNumber());
+      judgement=new Judgement(computer, user);
+      outputView.printGameResult(judgement);
+    } while(!judgement.isFinish());
   }
 }

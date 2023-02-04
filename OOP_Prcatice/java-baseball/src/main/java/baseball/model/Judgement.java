@@ -1,5 +1,6 @@
 package baseball.model;
 
+import baseball.NumberEnum;
 import java.util.List;
 
 public class Judgement {
@@ -29,6 +30,10 @@ public class Judgement {
         this.ball++;
       }
     }
+  }
+
+  public boolean isFinish() {
+    return strike == NumberEnum.LIST_SIZE.getLimitedNumber();
   }
 
   public int getBall() {
