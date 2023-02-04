@@ -2,6 +2,7 @@ package baseball.controller;
 
 import baseball.model.Computer;
 import baseball.model.User;
+import baseball.util.RandomUtil;
 import baseball.view.InputView;
 import baseball.view.OutputView;
 
@@ -14,7 +15,7 @@ public class BaseBallController {
   private User user;
 
   public BaseBallController() {
-    computer = new Computer();
+    computer = new Computer(RandomUtil.makeRandomNumbers());
   }
 
   public void gameStart() {

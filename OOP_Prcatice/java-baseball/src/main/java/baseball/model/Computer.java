@@ -1,14 +1,13 @@
 package baseball.model;
 
-import baseball.util.RandomUtil;
 import java.util.List;
 
 public class Computer {
 
   private final List<Integer> computerNumbers;
 
-  public Computer() {
-    this.computerNumbers = RandomUtil.makeRandomNumbers();
+  public Computer(List<Integer> computerNumbers) {
+    this.computerNumbers = computerNumbers;
   }
 
   public List<Integer> getComputerNumbers() {
