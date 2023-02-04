@@ -20,7 +20,8 @@ public class OutputView {
 
     String printResult = String.format(OUT_GAME_RESULT_BALL.getMessage(), judgement.getBall());
     if (judgement.getStrike() != 0) {
-      printResult += " "+String.format(OUT_GAME_RESULT_STRIKE.getMessage(), judgement.getStrike());
+      printResult +=
+          " " + String.format(OUT_GAME_RESULT_STRIKE.getMessage(), judgement.getStrike());
     }
     System.out.println(printResult);
   }
@@ -31,7 +32,7 @@ public class OutputView {
         System.out.println(OUT_GAME_RESULT_NOTHING.getMessage());
         return true;
       }
-      System.out.printf(OUT_GAME_RESULT_STRIKE.getMessage(), judgement.getStrike());
+      System.out.printf(OUT_GAME_RESULT_STRIKE.getMessage() + "\n", judgement.getStrike());
       return true;
     }
     return false;
