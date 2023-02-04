@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 public class User {
 
-  private List<Integer> userNumber;
+  private List<Integer> userNumbers;
 
   public User(String strUserNumber) {
     userNumberValidate(strUserNumber);
@@ -27,12 +27,12 @@ public class User {
 
   private void numberRightValidate(String strUserNumber) {
     try {
-      this.userNumber = new ArrayList<>(Arrays.asList(strUserNumber.split("")))
+      this.userNumbers = new ArrayList<>(Arrays.asList(strUserNumber.split("")))
           .stream()
           .map(Integer::parseInt)
           .collect(Collectors.toList());
 
-      if (this.userNumber.contains(EXCEPTED_NUMBER.getLimitedNumber())) {
+      if (this.userNumbers.contains(EXCEPTED_NUMBER.getLimitedNumber())) {
         throw new Exception();
       }
     } catch (Exception e) {
@@ -42,16 +42,19 @@ public class User {
   }
 
   private void numberSizeValidate() {
-    if (LIST_SIZE.getLimitedNumber() != this.userNumber.size()) {
+    if (LIST_SIZE.getLimitedNumber() != this.userNumbers.size()) {
       throw new IllegalArgumentException(ERROR_USER_NUMBER_SIZE.getMessage());
     }
   }
 
   private void numberDistinctValidate() {
-    int size = (int) this.userNumber.stream().distinct().count();
+    int size = (int) this.userNumbers.stream().distinct().count();
     if (size != LIST_SIZE.getLimitedNumber()) {
       throw new IllegalArgumentException(ERROR_USER_NUMBER_DISTINCT.getMessage());
     }
   }
 
+  public List<Integer> getUserNumbers() {
+    return userNumbers;
+  }
 }
