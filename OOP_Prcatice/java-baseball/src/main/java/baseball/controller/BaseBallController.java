@@ -28,7 +28,7 @@ public class BaseBallController {
 
   private void gameCalculate() {
     do {
-      user = new User(inputView.getUserNumber());
+      user = new User(inputView.readUserNumber());
       judgement=new Judgement(computer, user);
       outputView.printGameResult(judgement);
     } while(!judgement.isFinish());
