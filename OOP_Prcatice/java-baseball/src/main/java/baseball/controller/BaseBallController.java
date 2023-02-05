@@ -15,30 +15,35 @@ public class BaseBallController {
 
   private final OutputView outputView = new OutputView();
   private final InputView inputView = new InputView();
+
   private Computer computer;
   private Judgement judgement;
   private User user;
 
   public void gameStart() {
     outputView.gameStart();
+    gameContinue();
+  }
+
+  private void gameContinue() {
+    computer = new Computer(RandomUtil.makeRandomNumbers());
+
     gameCalculate();
+
+    continueGenerate(inputView.readContinueGenerate());
   }
 
   private void gameCalculate() {
-    computer = new Computer(RandomUtil.makeRandomNumbers());
-
     do {
       user = new User(inputView.readUserNumber());
       judgement = new Judgement(computer, user);
       outputView.printGameResult(judgement);
     } while (!judgement.isFinish());
-
-    continueGenerate(inputView.readContinueGenerate());
   }
 
   private void continueGenerate(String number) {
     if (number.equals(CONTINUE_NUMBER)) {
-      gameCalculate();
+      gameContinue();
       return;
     }
     if (number.equals(END_NUMBER)) {
