@@ -6,12 +6,21 @@ import static baseball.NumberEnum.MIN_NUMBER;
 
 import baseball.NumberEnum;
 import camp.nextstep.edu.missionutils.Randoms;
+import java.util.ArrayList;
 import java.util.List;
 
 public class RandomUtil {
 
   public static List<Integer> makeRandomNumbers() {
-    return Randoms.pickUniqueNumbersInRange(MIN_NUMBER.getLimitedNumber(),
-        MAX_NUMBER.getLimitedNumber(), LIST_SIZE.getLimitedNumber());
+    List<Integer> randomNumbers = new ArrayList<>();
+
+    while (randomNumbers.size() < LIST_SIZE.getLimitedNumber()) {
+      int randomNumber = Randoms.pickNumberInRange(MIN_NUMBER.getLimitedNumber(),
+          MAX_NUMBER.getLimitedNumber());
+      if (!randomNumbers.contains(randomNumber)) {
+        randomNumbers.add(randomNumber);
+      }
+    }
+    return randomNumbers;
   }
 }
