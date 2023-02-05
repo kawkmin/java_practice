@@ -11,7 +11,7 @@ import baseball.view.OutputView;
 public class BaseBallController {
 
   private static final String CONTINUE_NUMBER = "1";
-  private static final String END_NUMBER = "0";
+  private static final String END_NUMBER = "2";
 
   private final OutputView outputView = new OutputView();
   private final InputView inputView = new InputView();
@@ -25,8 +25,9 @@ public class BaseBallController {
   }
 
   private void gameCalculate() {
+    computer = new Computer(RandomUtil.makeRandomNumbers());
+
     do {
-      computer = new Computer(RandomUtil.makeRandomNumbers());
       user = new User(inputView.readUserNumber());
       judgement = new Judgement(computer, user);
       outputView.printGameResult(judgement);
