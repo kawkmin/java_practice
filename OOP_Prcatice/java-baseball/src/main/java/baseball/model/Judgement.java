@@ -5,6 +5,8 @@ import java.util.List;
 
 public class Judgement {
 
+  private static final int startCountNumber = 0;
+
   private final Computer computer;
   private final User user;
 
@@ -14,8 +16,8 @@ public class Judgement {
   public Judgement(Computer computer, User user) {
     this.computer = computer;
     this.user = user;
-    ball = 0;
-    strike = 0;
+    ball = startCountNumber;
+    strike = startCountNumber;
 
     calculatorBaseBall(computer.getComputerNumbers(), user.getUserNumbers());
   }
